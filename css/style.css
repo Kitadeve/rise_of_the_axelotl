@@ -1,0 +1,20 @@
+body {
+    background-image: url("./img/background/menu_background.jpg");
+}
+
+main {
+   color: #6ba8e6;
+
+}
+
+.logo img {
+    width: 419px;
+	height: 363px;
+}
+
+.portrait img {
+    width: 50%;
+    height: 50%;
+    background-color: aqua;
+    background-image: url("img/background/menu_background.jpg");
+}
