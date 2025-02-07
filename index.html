@@ -1,45 +1,219 @@
 <!DOCTYPE html>
 <html lang="efr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Rise of the Axolotl</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Potta+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Potta+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" href="./css/style.css">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Landing page Rise of the Axolotl">
-	<link rel="shortcut icon" type="image/x-icon" href="./img/fav-icone/favicon.ico"/>
+  <title>Rise of the Axolotl</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Landing page Rise of the Axolotl">
+  <link rel="shortcut icon" type="image/x-icon" href="./img/fav-icone/favicon.ico"/>
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <script src="global.js" defer></script>
+  <!-- fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Potta+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Potta+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@300;400;500;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-	<script src="./js/global.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <nav>
+  <header class="header">
+    <div class="container d-flex">
+      <div class="logo-size">
         <div class="logo">
-            <img src="./img/animated-logo.png" alt="Rise of the Axolotl Logo" class="animated-logo">
+          <img width=6210px heigh=150px class="animation__logo" src="img\logo\animated-logo.png" alt="logo animé">
         </div>
-        </nav>
-    </header>
+      </div>
+      <nav class="navbar">
+        <ul class="menu list-unstyled">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#contact">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="right">
+        <ul class="socials list-unstyled">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <svg  class="icon facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank">
+              <svg  class="icon instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank">
+              <svg  class="icon twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+            </a>
+          </li>
+        </ul>
+        <button class="burger"><span class="bar"></span></button>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+
+    <!-- intro  -->
+    <section id="intro" class="intro">
+      <h1 class="title">Make your way up</h1>
+      <div class="container">
+        <div class="grid-one">
+          <div class="intro__item left" class="grid__item">
+            <h2 class="h2">Brave the abyss</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
+            dolor sit amet consectetur, 
+            adipisicing elit. Officia, saepe corporis
+            dolorem nam et corrupti harum facere doloremque 
+            voluptates ullam exercitationem cumque, 
+            ut error id ad eligendi deserunt quae ex.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
+            dolor sit amet consectetur, 
+            adipisicing elit. Officia, saepe corporis
+            dolorem nam et corrupti harum facere doloremque 
+            voluptates ullam exercitationem cumque, 
+            ut error id ad eligendi deserunt quae ex.
+            </p>
+          </div>
+          <div class="intro__item right">
+            <div class="screenshot">
+              <img src="img/screenshot/screen-one.png" alt="screenshots de l'axolotl au fond de l'ocean">
+            </div>  
+          </div>
+        </div>
+        <div class="grid-two">
+          <div class="intro__item right" class="middle">
+            <h2 class="h2">Get some help from friends</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
+              dolor sit amet consectetur, 
+              adipisicing elit. Officia, saepe corporis
+              dolorem nam et corrupti harum facere doloremque 
+              voluptates ullam exercitationem cumque, 
+              ut error id ad eligendi deserunt quae ex.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
+              dolor sit amet consectetur, 
+              adipisicing elit. Officia, saepe corporis
+              dolorem nam et corrupti harum facere doloremque 
+              voluptates ullam exercitationem cumque, 
+              ut error id ad eligendi deserunt quae ex.
+            </p>
+          </div>
+          <div class="intro__item left">
+            <div class="screenshot">
+              <img src="img/screenshot/screen-two.png" alt="screenshots de l'axolotl au fond de l'ocean">
+            </div>  
+          </div>
+        </div>
+        <div class="grid-one">
+          <div class="intro__item left">
+            <h2 class="h2">Watch out for ennemies</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
+              dolor sit amet consectetur, 
+              adipisicing elit. Officia, saepe corporis
+              dolorem nam et corrupti harum facere doloremque 
+              voluptates ullam exercitationem cumque, 
+              ut error id ad eligendi deserunt quae ex.
+            </p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
+              dolor sit amet consectetur, 
+              adipisicing elit. Officia, saepe corporis
+              dolorem nam et corrupti harum facere doloremque 
+              voluptates ullam exercitationem cumque, 
+              ut error id ad eligendi deserunt quae ex.
+            </p>
+          </div>
+          <div class="intro__item right">
+            <div class="screeshot">
+              <img src="img/screenshot/screen-three.png" alt="screenshots de l'axolotl au fond de l'ocean">
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- clock  -->
+    <section>
+      <script src="clock1.js"></script>
+        <div class="countdown">
+          <h2>Game release countdown</h2>
+          <div class="countdown-timer">
+            <div class="countdown-days-container">
+              <div class="countdown-days">
+                00
+              </div>
+              <div class="days">
+                D
+              </div>
+            </div>
+            <div class="countdown-days-container">
+              <div class="countdown-hours">
+                00
+              </div>
+              <div class="days">
+                H
+              </div>
+            </div>
+            <div class="countdown-days-container">
+              <div class="countdown-minutes">
+                M
+              </div>
+              <div class="days">
+                M
+              </div>
+            </div>
+            <div class="countdown-days-container">
+              <div class="countdown-seconds">
+                00
+              </div>
+              <div class="days">
+                S
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- contact  -->
+    <section id="contact" class="Contact">
+			<div class="container">
+				<div class="section-header">
+					<h2 class="section-title">Contact</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quas veniam aliquam soluta deleniti qui repellendus neque? Doloribus, fugiat sed voluptas fuga vel dolor ad, aliquam repellendus quia eligendi harum.
+					</p>
+				</div>
+
+				<form action="contact.php" class="form">
+					<label for="firstname">
+						<input type="text" name="firstname" id="firstname" placeholder="Prénom">
+					</label>
+					<label for="lastname">
+						<input type="text" name="lastname" id="lastname" placeholder="Nom">
+					</label>
+					<label for="email">
+						<input type="email" name="email" id="email" placeholder="Email">
+					</label>
+					<textarea name="message" id="message" placeholder="Message"></textarea>
+					<input class="btn" type="submit" value="Envoyer">
+			</div>
+	</section>
     
-    <main>
-        <h1>harozhozhgljdgqzgf</h1>
-        <div class="portrait">
-            <img src="./img/portraits/teacher-295387_1280.png" alt="">
-        </div>
-    </main>
+      
+  </main>
 
-    <footer>
+  <footer>
 
-    </footer>
+  </footer>
 </body>
 </html>
 
