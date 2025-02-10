@@ -44,7 +44,7 @@ body{
 /* logo animation  */
 @media screen and (max-width: 780px) {
   :root {
-    --pixel-size: 0.3;
+    --pixel-size: 0.6;
   }
 } 
 
@@ -104,10 +104,13 @@ header .right {
 	align-items: center;
 }
 
+header .right ul{
+  display: flex;
+}
 
 header .socials a {
   fill: white;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 header .socials a:hover {
@@ -148,7 +151,7 @@ nav {
 
 
 .social a {
-  padding: 10px;
+  padding: 0 10px;
 }
 .header a {
   text-decoration: none;
