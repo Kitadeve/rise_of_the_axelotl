@@ -57,7 +57,7 @@ main img {
 }
 
 .animation__logo {
-  animation: moveSpritesheet 3s steps(23) infinite;
+  animation: moveSpritesheet 2s steps(23) infinite;
   width: calc(4600px * var(--pixel-size));
 
 }
@@ -291,6 +291,13 @@ nav {
     justify-content: center;
   }
 
+  .intro .slide-left {
+    animation: slideInLeft 1s;
+  }
+
+  .intro .slide-right {
+    animation: slideInRight 1s;
+  }
 }
 
 @media screen and (min-width: 781px) {
