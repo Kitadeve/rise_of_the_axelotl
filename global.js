@@ -129,49 +129,49 @@ function menuMobile () {
   
   // effets 
   
-//   const observerIntersectionAnimation = () => {
-//     const section = document.querySelectorAll("section");
-//     const skills = document.querySelectorAll(".skills .bar");
+  const observerIntersectionAnimation = () => {
+    const section = document.querySelectorAll("section");
+    const skills = document.querySelectorAll(".skills .bar");
   
-//     section.forEach((section, index) => {
-//       if(index === 0) return;
-//       section.style.opacity = "0";
-//       section.style.transition = "all 1.6s";
-//     })
+    section.forEach((section, index) => {
+      if(index === 0) return;
+      section.style.opacity = "0";
+      section.style.transition = "all 1.6s";
+    })
   
-//     skills.forEach((elem, index) => {
-//       elem.style.width = "0";
-//       elem.style.transition = "all 1.6s";
-//     })
+    skills.forEach((elem, index) => {
+      elem.style.width = "0";
+      elem.style.transition = "all 1.6s";
+    })
   
-//     let sectionObserver = new IntersectionObserver(function (entries, observer) {
-//       entries.forEach(entry => {
-//         if(entry.isIntersecting) {
-//           let elem = entry.target;
-//           elem.style.opacity = 1;
-//         }
-//       });
-//     });
+    let sectionObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          let elem = entry.target;
+          elem.style.opacity = 1;
+        }
+      });
+    });
   
-//     section.forEach(section => {
-//       sectionObserver.observe(section)
-//     })
+    section.forEach(section => {
+      sectionObserver.observe(section)
+    })
   
-//     let skillsObserver = new IntersectionObserver(function (entries, observer) {
-//       entries.forEach(entry => {
-//         if(entry.isIntersecting) {
-//           let elem = entry.target;
-//           console.log(elem);
-//           elem.style.width = elem.dataset.width + "%"
-//         }
-//       });
-//     });
+    let skillsObserver = new IntersectionObserver(function (entries, observer) {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          let elem = entry.target;
+          console.log(elem);
+          elem.style.width = elem.dataset.width + "%"
+        }
+      });
+    });
   
-//     skills.forEach(skill => {
-//       skillsObserver.observe(skill)
-//     })
-//   }
+    skills.forEach(skill => {
+      skillsObserver.observe(skill)
+    })
+  }
   
-//   observerIntersectionAnimation();
+  observerIntersectionAnimation();
   
   
