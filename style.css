@@ -41,7 +41,7 @@ main img {
 /* grand écran  */
 @media screen and (min-width: 781px) {
   :root {
-    --pixel-size: 1;
+    --pixel-size: 1.2;
   } 
 }
 
@@ -89,6 +89,11 @@ main img {
 			max-width: 80%;
 			margin: auto;
   }
+
+  .logo {
+    position: relative;
+    top: 20px;
+  }
 }  
 
 .d-flex {
@@ -102,6 +107,17 @@ header .right {
 	display: flex;
 	align-items: center;
 }
+
+header .socials a {
+  fill: white;
+  padding: 1rem;
+}
+
+header .socials a:hover {
+  fill: black;
+  transition: all 1s;
+}
+  
 
 .header li {
 	display: inline-block;
@@ -126,13 +142,11 @@ nav {
 	margin: 0;
 }
 
-.socials {
-	display: flex;
-}
+
 
 .socials li {
 	margin-bottom: 0;
-	padding:0px 0.5;
+	padding:0px 0.5px;
 }
 
 
@@ -159,7 +173,7 @@ nav {
 	display: block;
 	width: 22px;
 	height: 3px;
-	background: black;
+	background: white;
 }
 
 .burger .bar::before, .burger .bar::after {
@@ -167,7 +181,7 @@ nav {
 	content: "";
 	width: 22px;
 	height: 3px;
-	background: black;
+	background: white;
 	position: absolute;
 }
 
@@ -179,6 +193,21 @@ nav {
 	transform: translateY(+8px);
 }
 
+.burger:hover .bar::before {
+  background: #000;
+  transition: all 0.5s;
+}
+
+.burger:hover span {
+  background: #000;
+  transition: all 0.5s;
+}
+
+.burger:hover .bar::after {
+  background: #000;
+  transition: all 0.5s;
+}
+
 /* petit écran */
 
 @media screen and (max-width: 780px) {
@@ -186,6 +215,11 @@ nav {
   .d-flex {
     display: flex;
     align-items: center;
+  }
+
+  .logo {
+    position: relative;
+    top: 5px;
   }
 
   .righ{
@@ -198,7 +232,7 @@ nav {
 		align-items: center;
 		flex-direction: column;
 		position: fixed;
-		top: 220px;
+		top: 82px;
 		left: 110%;
 		width: 0%;
 		overflow: hidden;
@@ -220,7 +254,7 @@ nav {
 		padding: 2rem;
 	}
 	nav .menu a:hover {
-		color: rgb(8, 0, 68);
+		color: rgb(0, 0, 0);
 		transform: scale(1.1);
 		transition:all 0.4s;
 	}
@@ -251,6 +285,11 @@ nav {
 
   .socials .icon {
     height: 20px;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -286,7 +325,7 @@ h1{
 
 h2{
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   margin-top: 1rem;
 }
 
@@ -450,5 +489,230 @@ p{
 
 .form .btn:hover {
 	cursor: pointer;
-	background: #3B82F6;
+	background: #003C6E;
+  
+}
+
+
+/* footer  */
+footer {
+	color: #EEE;
+	background: #003C6E;
+	text-align: center;
+	font-size: 0.8rem;
+}
+
+footer .grid {
+	align-items: center;
+}
+
+footer .socials{
+	text-align: center;
+  margin-bottom: 14px;
+}
+
+footer .socials li {
+	padding: 0 1.5rem;
+}
+
+footer .socials a {
+	fill: white;
+	border: 1px solid white;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+	transition: all 0.8s;
+}
+
+footer p {
+	margin-top: 3rem;
+}
+
+footer .socials a:hover {
+	background: white;
+	fill: black;
+	transform: scale(1.2);
+}
+@media screen and (min-width:781px) {
+	footer .grid__item {
+		max-width: 33.333%;
+	}
+
+  footer .container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+  }
+
+  footer .team {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  footer .portraits {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  footer .staff {
+    max-width: 25%;
+    margin: 1rem;
+  }
+
+  footer h2 {
+    text-align: center;
+    }
+  footer p {
+    display: inline;
+  }
+
+  footer .socials {
+    display: flex;
+  }
+}
+
+footer .team {
+  margin-bottom: 2rem;
+}
+
+footer p{
+  font-size: 14px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* padding: 1rem; */
+}
+footer img {
+  /* max-width: 50%;
+  height: auto; */
+  border: 1px solid black;
+  border-radius: 50%;
+  flex: 1;
+}
+
+/* .trailer {
+  max-width: 90%;
+  aspect-ratio: 16/9;
+  display: flex;
+  justify-content: center;
+  padding: 26px ;
+  margin: auto;
+} */
+.video-wrapper {
+  max-width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  
+}
+
+.trailer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.trailer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* photo slide  */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+  border-radius: 30%;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

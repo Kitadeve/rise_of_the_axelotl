@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="efr">
+<html lang="fr">
 <head>
   <title>Rise of the Axolotl</title>
   <meta charset="UTF-8">
@@ -33,9 +33,9 @@
       <nav class="navbar">
         <ul class="menu list-unstyled">
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="#about">A propos</a></li>
+          <li><a href="#trailer">Trailer</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.html" target="_blank">Blog</a></li>
           <li><a href="#contact">Contacts</a></li>
         </ul>
       </nav>
@@ -73,17 +73,12 @@
             <h2 class="h2">Brave the abyss</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
             dolor sit amet consectetur, 
-            adipisicing elit. Officia, saepe corporis
-            dolorem nam et corrupti harum facere doloremque 
-            voluptates ullam exercitationem cumque, 
-            ut error id ad eligendi deserunt quae ex.
+            adipisicing elit.
             </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
             dolor sit amet consectetur, 
-            adipisicing elit. Officia, saepe corporis
-            dolorem nam et corrupti harum facere doloremque 
-            voluptates ullam exercitationem cumque, 
-            ut error id ad eligendi deserunt quae ex.
+            adipisicing elit.
+            
             </p>
           </div>
           <div class="intro__item right">
@@ -97,22 +92,16 @@
             <h2 class="h2">Get some help from friends</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
               dolor sit amet consectetur, 
-              adipisicing elit. Officia, saepe corporis
-              dolorem nam et corrupti harum facere doloremque 
-              voluptates ullam exercitationem cumque, 
-              ut error id ad eligendi deserunt quae ex.
+              adipisicing elit.
             </p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
               dolor sit amet consectetur, 
-              adipisicing elit. Officia, saepe corporis
-              dolorem nam et corrupti harum facere doloremque 
-              voluptates ullam exercitationem cumque, 
-              ut error id ad eligendi deserunt quae ex.
+              adipisicing elit.
             </p>
           </div>
           <div class="intro__item left">
             <div class="screenshot">
-              <img src="img/screenshot/screen-two.png" alt="screenshots de l'axolotl au fond de l'ocean">
+              <img src="img/screenshot/screen-two.png" alt="screenshots de l'axolotl sur une méduse">
             </div>  
           </div>
         </div>
@@ -121,28 +110,27 @@
             <h2 class="h2">Watch out for ennemies</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
               dolor sit amet consectetur, 
-              adipisicing elit. Officia, saepe corporis
-              dolorem nam et corrupti harum facere doloremque 
-              voluptates ullam exercitationem cumque, 
-              ut error id ad eligendi deserunt quae ex.
-            </p>
-             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
+              adipisicing elit.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum 
               dolor sit amet consectetur, 
-              adipisicing elit. Officia, saepe corporis
-              dolorem nam et corrupti harum facere doloremque 
-              voluptates ullam exercitationem cumque, 
-              ut error id ad eligendi deserunt quae ex.
-            </p>
+              adipisicing elit.
+            </p>  
           </div>
           <div class="intro__item right">
             <div class="screeshot">
-              <img src="img/screenshot/screen-three.png" alt="screenshots de l'axolotl au fond de l'ocean">
+              <img src="img/screenshot/screen-three.png" alt="screenshots de l'axolotl près du requin">
             </div>  
           </div>
         </div>
       </div>
     </section>
 
+    <!-- youtube -->
+    <section class="video-wrapper">
+      <div class="trailer" id="trailer">
+        <iframe width="1400" height="780" src="https://www.youtube.com/embed/vd-IwcxFekE?si=7PayibBYN0T0n2zA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </section>    
     <!-- clock  -->
     <section>
       <script src="clock1.js"></script>
@@ -184,6 +172,37 @@
           </div>
     </section>
 
+    <!-- photo slide  -->
+    <section>
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="img\screenshot\screen-one.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img\screenshot\screen-three.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="img\screenshot\screen-two.png" style="width:100%">
+        </div>
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
     <!-- contact  -->
     <section id="contact" class="Contact">
 			<div class="container">
@@ -206,14 +225,79 @@
 					<textarea name="message" id="message" placeholder="Message"></textarea>
 					<input class="btn" type="submit" value="Envoyer">
 			</div>
-	</section>
+	  </section>
     
       
   </main>
 
+  <!-- footer  -->
   <footer>
-
-  </footer>
+		<div class="container">
+      <!-- portraits  -->
+      <div class="team">
+        <div class="grid__item">
+          <h2>Game jam troublemakers</h2>
+        </div>
+        <div class="portraits">
+          <div class="staff">
+            <img width="198px" height="198px" src="img\portraits\woman-7854120_1280.png" alt="photo de Morganne S.">
+            <h3><strong>Morganne S.</strong></h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum officiis, id nobis ad at soluta harum voluptate repellat maiores.</p>
+          </div>      
+          <div class="staff">
+            <img width="198px" height="198px" src="img\portraits\man-156584_1280.png" alt="photo de Alex M.">
+            <h3><strong>Alex M.</strong></h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum officiis, id nobis ad at soluta harum voluptate repellat maiores.</p>
+          </div>           
+          <div class="staff">
+            <img width="198px" height="198px" src="img\portraits\businessman-310819_1280.png" alt="photo de Thomas D.O.E.S">
+            <h3><strong>Thomas D.O.E.S</strong></h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum officiis, id nobis ad at soluta harum voluptate repellat maiores.</p>
+          </div>            
+          <div class="staff">
+            <img width="198px" height="198px" src="img\portraits\avatar-2027365_1280.png" alt="photo de Thomas M.">
+            <h3><strong>Thomas M.</strong></h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum officiis, id nobis ad at soluta harum voluptate repellat maiores.</p>
+          </div>           
+          <div class="staff">
+            <img width="198px" height="198px" src="img\portraits\avatar-2027366_1280.png" alt="photo de Thomas K.">
+            <h3><strong>Thomas K.</strong></h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum officiis, id nobis ad at soluta harum voluptate repellat maiores.</p>
+          </div>           
+          <div class="staff">
+            <img width="198px" height="198px" src="img\portraits\teacher-295387_1280.png" alt="photo de Leatitia L.">
+            <h3><strong>Laetitia L.</strong></h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum officiis, id nobis ad at soluta harum voluptate repellat maiores.</p>
+          </div>
+        </div>
+      </div>
+      <!-- copyright and socials  -->
+			<div class="grid">
+				<div class="grid__item">
+					<ul class="socials list-unstyled">
+						<li>
+							<a href="https://www.facebook.com/" target="_blank">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"/></svg>						
+								</a>
+						</li>
+						<li>
+							<a href="https://instagram.com" target="_blank">
+								<svg  class="icon instagram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com" target="_blank">
+								<svg class="icon twitter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class=copyright>
+					<p>Rise of the Axolotl is © Copyright 2025 Game jam troublemakers </p>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
 
