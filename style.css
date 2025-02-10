@@ -26,15 +26,13 @@ body{
   background: #001b6e;
 }
 
-
-
-main img {
+.intro img,
+.slideshow-container img {
   max-width: 100%;
   height: auto;
   border-radius: 10%;
   border: 5px solid  rgba(2, 5, 26, 0.3);
 }
-
 
 /* grand écran  */
 @media screen and (min-width: 781px) {
@@ -85,7 +83,7 @@ main img {
 @media screen and (min-width: 781px) {
 	.container {
 			max-width: 80%;
-			margin: auto;
+			margin: 40px auto;
   }
 
   .logo {
@@ -339,6 +337,40 @@ h2{
 p{
   line-height: 1.6rem;
   margin-bottom: 2rem;
+}
+
+
+/* store logos */
+.logos svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0;
+}
+
+.logos .grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.logos .grid__item {
+  max-width: 33.333%;
+  height: auto;
+  flex-direction: column;
+  padding: 20px 80px;
+}
+
+@media screen and (max-width: 780px) {
+  .logos .grid__item {
+    padding: 20px;
+  }
 }
 
 /* grand écran */
