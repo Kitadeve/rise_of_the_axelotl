@@ -46,7 +46,7 @@ main img {
 /* logo animation  */
 @media screen and (max-width: 780px) {
   :root {
-    --pixel-size: 0.4;
+    --pixel-size: 0.3;
   }
 } 
 
@@ -57,7 +57,7 @@ main img {
 }
 
 .animation__logo {
-  animation: moveSpritesheet 2s steps(23) infinite;
+  animation: moveSpritesheet 2.5s steps(23) infinite;
   width: calc(4600px * var(--pixel-size));
 
 }
