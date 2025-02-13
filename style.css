@@ -231,10 +231,6 @@ nav {
     top: 5px;
   }
 
-  .righ{
-    max-width: 50%;
-    margin: auto;
-  }
   nav {
 		display: flex;
 		justify-content: center;
