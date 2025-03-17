@@ -24,7 +24,7 @@
 //   updateCountdown();
 
   function updateCountdown() {
-    const countdownDate = new Date("March 31, 2025 23:59:59").getTime();
+    const countdownDate = new Date("March 28, 2025 23:59:59").getTime();
     const now = new Date().getTime();
     const distance = countdownDate - now;
 
